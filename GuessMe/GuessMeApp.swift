@@ -11,7 +11,7 @@ import SwiftUI
 struct GuessMeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(value: 77.7, alphaTintColor: 1)
         }
     }
 }
