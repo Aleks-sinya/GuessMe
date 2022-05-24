@@ -17,10 +17,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("Пододвиньте слайдер, как можно ближе к: \(lround(sliderValueLabel))")
-//                SliderValueLabel(randomValue: sliderValueLabel)
-            }
+                Text("Пододвиньте слайдер, как можно ближе к: ")
+                SliderValueLabel(randomValue: sliderValueLabel)
+            
             SliderValuesView(value: $value, alphaTintColor: $alphaTintColor)
             
             CheckResultButton(value: $value,
